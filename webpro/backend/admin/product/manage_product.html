@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Aboreto&display=swap"
+            rel="stylesheet">
+
+        <!-- Custom Styling -->
+        <link rel="stylesheet" href="../../css/style.css">
+
+        <!-- Admin Styling -->
+        <link rel="stylesheet" href="../../css/admin.css">
+
+        <title>Admin Section</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo-text"><span>AdminPage</h1>
+            </div>
+            
+            <i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">
+                <li>
+                   
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        Admin
+                        <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                    </a>
+                    <ul>
+                        <li><a href="../../../homepage.html" class="logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Admin Page Wrapper -->
+        <div class="admin-wrapper">
+
+            <!-- Left Sidebar -->
+            <div class="left-sidebar">
+                <ul>
+                    <li><a href="../../../homepage.html" class="homeie" >HOME</a></li>
+                    <li><a href="manage_product.html">Manage Products</a></li>
+                    <li><a href="../users/manage_user.html">Manage User</a></li>
+                   
+                </ul>
+            </div>
+            <!-- // Left Sidebar -->
+
+
+            <!-- Admin Content -->
+            <div class="admin-content">
+                <div class="button-group">
+                    <a href="add_product.html" class="btn btn-big">Add Products</a>
+                    <a href="manage_product.html" class="btn btn-big">Manage Products</a>
+                </div>
+
+
+                <div class="content">
+
+                    <h2 class="page-title">Manage Products</h2>
+
+                    <table>
+                        <thead>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th colspan="3">Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#001</td>
+                                <td>Dolce & gabbana</td>
+                                <td>$120</td>
+                                <td><a href="create.html" class="edit">edit</a></td>
+                                <td><a href="#" class="delete">delete</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>#002</td>
+                                <td>GUCCI</td>
+                                <td>$135</td>
+                                <td><a href="create.html" class="edit">edit</a></td>
+                                <td><a href="#" class="delete">delete</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>#003</td>
+                                <td>DIOR</td>
+                                <td>$112</td>
+                                <td><a href="create.html" class="edit">edit</a></td>
+                                <td><a href="#" class="delete">delete</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>#004</td>
+                                <td>Prada</td>
+                                <td>$150</td>
+                                <td><a href="create.html" class="edit">edit</a></td>
+                                <td><a href="#" class="delete">delete</a></td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+            <!-- // Admin Content -->
+
+        </div>
+        <!-- // Page Wrapper -->
+
+
+
+        <!-- JQuery -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Custom Script -->
+        <script src="../../js/scripts.js"></script>
+
+    </body>
+
+</html>

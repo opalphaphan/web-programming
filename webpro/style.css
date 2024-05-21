@@ -1,0 +1,341 @@
+/*(160, 141, 108)*/
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aboreto&display=swap');
+
+/* all style */
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* icon and link to account and cart */
+header{
+    background-color: rgb(160, 141, 108);
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;/* set a sticky nav bar  */
+    top:    0px;
+    width: 100%;
+    font-family: Aboreto;
+    
+}
+
+/* account and cart style */
+ul {
+    flex: 1;
+    text-align: right;
+
+}
+
+/* account and cart style */
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 100 50px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+    
+  }
+
+/* account and cart style */
+.head a{
+     color: rgb(255, 255, 255);
+     padding: 0 10px;
+     position: relative;
+     font-size: 12px;
+     
+ }
+ 
+/* 3 social media logo */
+.box{
+    margin-left: 50;
+
+ }
+ 
+ /* facebook logo */
+ .logo1{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+    margin-top: 4px;
+    margin-left: 25px;
+}
+
+/* instragram logo */
+.logo2{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+    margin-right: 5px;
+}
+
+/* twitter logo */
+.logo3{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+}
+
+/* main logo of chris */
+.mainlogo{
+    display:flex;
+    width: 140px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* navbar style */
+nav{
+    font-family: Aboreto;
+    overflow: hidden;
+    position: fixed;
+    top:    0px;
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+}
+
+/* set navbar detail to the center */
+nav a{
+    display: flex;
+    color: rgb(30, 24, 24);
+    padding: 10px;
+    font-weight: 150px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 1px;
+    
+    
+}
+
+/* create a invisible line to animate the content */
+nav a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+    margin-top: 20px;
+    margin-right: 20px;
+
+
+}
+
+/* animate the content when mouse over it */
+.x :hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 52px;
+    background-color: rgb(160, 141, 108);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* animate the content when mouse over it */
+.y :hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 65px;
+    background-color: rgb(160, 141, 108);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* animate the content when mouse over it */
+.z :hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 85px;
+    background-color: rgb(160, 141, 108);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* set the content to center */
+.navbar{
+    justify-content: center;
+    display: flex;
+
+}
+
+/* set the video position and size */
+video{
+    margin-top: 110px;
+    width: 1519px;
+    height: 100vh;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%
+    
+}
+
+/* set font size and position */
+.col1{
+    font-size: 28px;
+    text-align: center;
+    margin-top:930px ;
+    margin-bottom: 10px;
+}
+
+/* set front family and color */
+.col1 a{
+    font-family: Aboreto;
+    color: rgb(93, 93, 93);
+}
+
+/* set position of content  */
+.site{
+    height: 300px;
+    width: 450px;
+    display: inline;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 30px;
+    
+}
+
+/* set the animate when mouse over it */
+.site:hover{
+    background-color: rgb(160, 141, 108);
+    transition: 0.7s;
+}
+
+/* set font size and position */
+.col2{
+    font-size: 28px;
+    text-align: center;
+    margin-top:60px ;
+    margin-bottom: 20px;
+
+}
+
+/* set front family and color */
+.col2 a{
+    font-family: Aboreto;
+    color: rgb(93, 93, 93);
+}
+
+/* set the video position and size */
+.product{
+    margin-top: 193px;
+    padding-left: 40px;
+ }
+ 
+/* set the video position and size */
+.video1{
+    margin-top: -280px;
+    width: 500px;
+    right: 25%;
+    height: 700px;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+ }
+ 
+/* set the position to the right grid */
+.detail{
+     float: right;
+     margin-top: -30px;
+     margin-left: 10px;
+     margin-right: 35px;
+     padding-left: 30px;
+     font-family: Poppins;
+  
+ }
+ 
+/* set font size */
+.status{
+     line-height: 20px;
+     text-align: center;
+ }
+ 
+/* set font size */
+.title{
+     line-height: 50px;
+     text-align: center;
+ }
+
+/* set font size */
+.name{
+     line-height: 10px;
+     margin-bottom: 30px;
+     text-align: center;
+ }
+
+/* set font size */
+.price{
+     font-weight: bolder;
+     font-size: larger;
+     margin-bottom: 50px;
+ }
+
+/* create a button shape and set the position */
+.button{
+    font-family: Aboreto;
+    background-color: rgb(160, 141, 108);
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 141, 108);
+    color: white;
+    font-size: 16px;
+ }
+
+/* animate the button */
+.button:hover{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 141, 108);
+    color: rgb(69, 68, 68);
+ }
+ 
+ 
+footer{
+    margin-top:980px ;
+    margin-bottom: 0px;
+    background-color: rgb(163, 152, 138);
+    padding: 100px;
+    
+ }
+
+
+.footerr{
+    margin-top: -20px;
+    text-align: center;
+    justify-content: center;
+ }
+
+
+.footerr a{
+    font-family: Aboreto;
+    color: aliceblue;
+    font-size: 12px;
+    padding: 10px;
+    
+ }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
+            rel="stylesheet">
+
+        <!-- Custom Styling -->
+        <link rel="stylesheet" href="../../css/style.css">
+
+        <!-- Admin Styling -->
+        <link rel="stylesheet" href="../../css/admin.css">
+
+        <title>Admin Section - Add Admin</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo-text"><span>Admin</span>Page</h1>
+            </div>
+            <i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        Admin
+                        <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                    </a>
+                    <ul>
+                        <li><a href="#" class="logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Admin Page Wrapper -->
+        <div class="admin-wrapper">
+
+            <!-- Left Sidebar -->
+            <div class="left-sidebar">
+                <ul>
+                    <li><a href="../../../homepage.html" class="homeie">HOME</a></li>
+                    <li><a href="../product/manage_product.html">Manage Products</a></li>
+                    <li><a href="manage_user.html">Manage Admin</a></li>
+                    
+                </ul>
+            </div>
+            <!-- // Left Sidebar -->
+
+
+            <!-- Admin Content -->
+            <div class="admin-content">
+                <div class="button-group">
+                    <a href="add_user.html" class="btn btn-big">Add User</a>
+                    <a href="manage_user.html" class="btn btn-big">Manage User</a>
+                    <a href="manage_user.html" class="btn btn-big">Search</a>
+                </div>
+
+
+                <div class="content">
+
+                    <h2 class="page-title">Add User</h2>
+
+                    <form action="/insertINFORMATION" method="post">
+                        <div>
+                            <label>First Name</label>
+                            <input type="text" name="firstName" class="text-input" placeholder="First Name">
+                        </div>
+                        <div>
+                            <label>Last Name</label>
+                            <input type="text" name="lastName" class="text-input" placeholder="Last Name">
+                        </div>
+                        <div>
+                            <label>Date of Birth</label>
+                            <input type="date" name="dob" class="text-input" placeholder="Date of Birth" min="1900-01-01" max="2022-12-31">
+                        </div>
+                        <div>
+                            <label>Username</label>
+                            <input type="text" name="username" class="text-input" placeholder="Username">
+                        </div>
+                        <div>
+                            <label>Password</label>
+                            <input type="password" name="password" class="text-input" placeholder="Password">
+                        </div>
+                        <div>
+                            <label>Password Confirmation</label>
+                            <input type="password" name="passwordConf" class="text-input" placeholder="Password Confirmation">
+                        </div>
+                        <div>
+                            <label>Role</label>
+                            <select name="role" class="text-input">
+                                <option value="Admin">Admin</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-big">Add User</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+            <!-- // Admin Content -->
+
+        </div>
+        <!-- // Page Wrapper -->
+
+
+
+        <!-- JQuery -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Ckeditor -->
+        <script
+            src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js"></script>
+        <!-- Custom Script -->
+        <script src="../../js/scripts.js"></script>
+
+    </body>
+
+</html>

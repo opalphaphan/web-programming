@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aboreto&display=swap');
+
+/*all style*/
+*{
+    
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: Aboreto;
+    
+}
+/*add background image*/
+body{
+    background-image: url("https://drive.google.com/uc?id=1puX80ody8PPOEA-gK4PghbrQAwdoVPtl");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    
+}
+
+/* account and cart style */
+ul {
+    flex: 1;
+    text-align: right;
+
+}
+
+/* account and cart style */
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 100 50px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+    
+  }
+
+/* main logo of chris */
+.mainlogo{
+    display:block;
+    width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+/* navbar style */
+nav{
+    overflow: hidden;
+    position: fixed;
+    top:    0px;
+    width: 100%;
+    margin-top: 0px;
+    background-color: rgb(160, 141, 108);
+    opacity: 100%;
+}
+
+/* back (link to search style) */
+nav a{
+    display: flex;
+    color: white;
+    padding: 10px;
+    font-weight: 150px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+    
+}
+
+/* create a invisible line to animate the content */
+nav a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    display: block;
+
+    position: absolute;
+    transition: 0.5s;
+    margin-top: 20px;
+    margin-right: 20px;
+
+
+}
+
+/* animate the content when mouse over it */
+nav a:hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 80px;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* set the content to center */
+.navbar{
+    display: flex;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.container{
+    background-color: whitesmoke;
+    opacity: 98%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    border-width: 75%;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 170px
+    
+}
+span{
+    color: rgb(160, 141, 108);
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+article{
+    color: rgb(160, 141, 108);
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.input-field{
+    display: absolute;
+    flex-direction: column;
+   
+}
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    border-radius: 30px;
+    color: rgb(160, 141, 108);
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(160,141,108,0.1);
+    outline: none;
+}
+i{
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: rgb(160, 141, 108);
+}
+::-webkit-input-placeholder{
+    color: rgb(160, 141, 108);
+}
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    color: black;
+    background: rgba(160,141,108,0.7);
+    cursor: pointer;
+    transition: .3s ;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(160, 141, 108);
+    font-size: small;
+    margin-top: 10px;
+}
+.one{
+    display: flex;
+}
+
+
+label a{
+    color: rgb(160, 141, 108);
+    display: flex;
+    font-weight: 150px;
+}
+
+
+/* create a invisible line to animate the content */
+label a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+    margin-top: 20px;
+    margin-right: 20px;
+
+
+}
+
+/* animate the content when mouse over it */
+label a:hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 60px;
+    background-color:rgb(160, 141, 108);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 7px;
+}
+

@@ -1,0 +1,296 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
+/* all style */
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: Aboreto;
+
+}
+
+/* icon and link to account and cart */
+header{
+    background-color: rgb(160, 141, 108);
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:    0px;
+    width: 100%;
+    font-family: Aboreto;
+    
+}
+
+/* account and cart style */
+ul {
+    flex: 1;
+    text-align: right;
+
+}
+
+/* account and cart style */
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 100 50px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+    
+}
+
+/* account and cart style */
+.head a{
+     color: rgb(255, 255, 255);
+     padding: 0 10px;
+     position: relative;
+     font-size: 12px;
+     
+ }
+ 
+ /* 3 social media logo */
+.box{
+    margin-left: 50;
+
+ }
+
+  /* facebook logo */
+ .logo1{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+    margin-top: 4px;
+    margin-left: 25px;
+}
+
+/* instragram logo */
+.logo2{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+    margin-right: 5px;
+}
+
+/* twitter logo */
+.logo3{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+}
+
+/* main logo of chris */
+.mainlogo{
+    display:flex;
+    width: 140px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+/* navbar style */
+nav{
+    font-family: Aboreto;
+    overflow: hidden;
+    position: fixed;
+    top:    0px;
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    opacity: 100%;
+}
+
+/* navbar style */
+nav a{
+    display: flex;
+    color: rgb(30, 24, 24);
+    padding: 10px;
+    font-weight: 150px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 1px;
+    
+    
+}
+
+/* navbar style */
+nav a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+    margin-top: 20px;
+    margin-right: 20px;
+
+
+}
+
+/* when hover on homepage */
+.x :hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 52px;
+    background-color: rgb(160, 141, 108);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* when hover on search */
+.y :hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 65px;
+    background-color: rgb(160, 141, 108);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* when hover on about us */
+.z :hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 85px;
+    background-color: rgb(160, 141, 108);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* nav bar */
+.navbar{
+    justify-content: center;
+    display: flex;
+
+}
+
+/* body part add background */
+body{
+    background-image: url("https://drive.google.com/uc?id=1ZrumTzrMEStKYa4HUZm5I9PFhyiV5IaE");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+}
+
+/* all of box */
+.all{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* our team style */
+.our{
+    margin-top: 250px;
+    margin-left: 570px;
+    margin-right: 570px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    color: #ffffff;
+}
+
+/* member box */
+.member{
+    transition: 0.3s;
+    text-align: center;
+    margin: 20px;
+    padding: 27px;
+    transition: 0.3s;
+    background-color: #ffffff;
+    border-radius: 20px;
+    
+}
+
+/* when hover on member */
+.member:hover{
+    background: #ddd;
+    border-radius: 14px;
+}
+
+/* his/her member */
+.member img{
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+/* his/her name */
+.name{
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+/* his/her work */
+.status{
+    color: #7f7f7f;
+}
+
+/* detail for each member */
+.detail{ 
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #807e7e;
+}
+
+/* facebook and instragram icon */
+.platform a {
+    display: inline-block;
+    padding: 5px;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  
+/* when hover facebook and instragram */
+.platform a:hover {
+    color: #fff;
+    background-color: rgb(160, 141, 108);
+  }
+
+/* footer */
+footer{
+    margin-top:380px ;
+    margin-bottom: 0px;
+    background-color: rgb(163, 152, 138);
+    padding: 100px;
+    
+}
+
+/* footer */
+.footerr{
+    margin-top: -20px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* footer */
+.footerr a{
+    font-family: Aboreto;
+    color: aliceblue;
+    font-size: 12px;
+    padding: 10px;
+    
+}
+  
+

@@ -1,0 +1,453 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+
+
+/* all style */
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* icon and link to account and cart */
+header{
+    background-color: rgb(160, 141, 108);
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:    0px;
+    width: 100%;
+    font-family: Aboreto;
+    z-index: 1;
+}
+
+/* account and cart style */
+ul {
+    flex: 1;
+    text-align: right;
+
+}
+
+/* account and cart style */
+li { 
+    display: inline-block;
+    list-style: none;
+    margin: 100 50px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+    
+  }
+
+/* account and cart style */
+.head a{
+     color: rgb(255, 255, 255);
+     padding: 0 10px;
+     position: relative;
+     font-size: 12px;
+     
+ }
+ 
+ /* 3 social media logo */
+.box{
+    margin-left: 50;
+
+ }
+
+ /* facebook logo */
+ .logo1{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+    margin-top: 4px;
+    margin-left: 25px;
+}
+
+/* instragram logo */
+.logo2{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+    margin-right: 5px;
+}
+
+/* twitter logo */
+.logo3{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+}
+
+/* main logo of chris */
+.mainlogo{
+    display:flex;
+    width: 140px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* navbar style */
+nav{
+    font-family: Aboreto;
+    overflow: hidden;
+    position: fixed;
+    top:    0px;
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+    opacity: 80%;
+    z-index: 1;
+}
+
+/* back (link to search style) */
+nav a{
+    display: inline;
+    color: rgb(160, 141, 108);
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}
+
+/* detail next to back */
+article{
+    display: inline-block;
+    font-size: large;
+    text-align: center;
+    color: rgb(32, 32, 32);
+    
+}
+
+/* all of picture and detail in the right */
+.product{
+   margin-top: 193px;
+   padding-left: 40px;
+}
+
+/* picture */
+.pdmain .pd{
+     display: block;
+     float: left;
+}
+
+/* 2 biggest pictures */
+.pdmain{
+    height: 470px;
+    width: 330px;
+
+}
+
+/* 4 pictures below */
+.pd{
+    display: inline-flex;
+    height: 210px;
+    width: 165px;
+}
+
+/* detail in the right */
+.detail{
+    float: right;
+    margin-top: -400px;
+    margin-left: 10px;
+    margin-right: 40px;
+    padding-left: 30px;
+    font-family: Poppins;
+ 
+}
+
+/* In stock */
+.status{
+    font-weight: lighter;
+    color: rgb(113, 109, 109);
+    line-height: 20px;
+}
+
+/* name of brand */
+.title{
+    line-height: 50px;
+}
+
+/* name of product */
+.name{
+    line-height: 10px;
+    margin-bottom: 30px;
+}
+
+/* price */
+.price{
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 50px;
+}
+
+/* select size */
+.custom {
+    position: relative;
+    width: 400px;
+    text-align: left;
+    margin-bottom: 100px;
+    /* z-index: auto; */
+  }
+  
+/* style of border select size (emoticon and line)*/
+  .custom:after {
+      content: '\f078';
+      font: normal normal normal 17px/1 FontAwesome;
+      color: rgb(160, 141, 108);
+      right: 90px;
+      top: 6px;
+      height: 34px;
+      padding: 15px 0px 0px 8px;
+      border-left: 1px solid rgb(160, 141, 108);
+      position: absolute;
+      pointer-events: none;
+  }
+  
+
+/* style of border select size */
+  .custom select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+    float: left;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    color: gray;
+    line-height: 1.75;
+    background-color: #ffffff;
+    border: 1px solid rgb(160, 141, 108);
+
+  }
+
+  /* style cart button */
+  .cart {
+    margin-bottom: 30px;
+    float: left;
+    font-family: Aboreto;
+    background-color: rgb(160, 141, 108); 
+    border: 1px solid rgb(160, 141, 108);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 600px;
+}
+
+/* when click on button cart it will change */
+.cart:hover {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 141, 108);
+    color: rgb(69, 68, 68);
+}
+
+/* wishlist button with heart */
+.heart {
+    margin-bottom: 30px;
+    float: left;
+    margin-left: 20px;
+    background-color: rgb(160, 141, 108); 
+    border: 1px solid rgb(160, 141, 108);
+    border-radius: 10px;
+    
+    padding: 15px 35px;
+    padding-left: 25px;
+    padding-right: 40px;
+    color: white;
+    text-align: center;
+    display: inline-flex;
+    font-size: 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 10px;
+}
+
+/* when click on button heart it will change */
+.heart:hover {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 141, 108);
+    color: rgb(69, 68, 68);
+}
+
+/* sets the width of the container element with the class wrapper */
+.wrapper {
+    width: 1510px;
+}
+
+/* all tabs */
+.tabs {
+    position: relative;
+    margin: 3rem 0;
+    background: white;
+    height: 14.75rem;
+}
+
+/* behave like table elements, and helps to center the tabs within the container. */
+.tabs::before, .tabs::after {
+    content: "";
+    display: table;
+}
+
+/* ensures that the container wraps around the floated tabs properly. */
+.tabs::after {
+    clear: both;
+}
+
+/* the tabs to align horizontally and float to the left side of the container. */
+.tab {
+    float: left;
+}
+
+/* This hides the tab content by default, until the user clicks on the tab to reveal it. */
+.tab-switch {
+    display: none;
+}
+
+/* head of each tab */
+.tab-label {
+    font-family: Aboreto;
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: rgb(160, 141, 108);
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+}
+
+/* when click head of tab */
+.tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+}
+
+/* information content in tab */
+.tab-content {
+    
+    font-family: Tajawal;
+    font-weight: 34px;
+    height: 30rem;
+    position: absolute;
+    top: 2.75em;
+    left: 0;
+    padding: 1.7rem;
+    background: #fff;
+    color: rgb(69, 68, 68);
+    border-bottom: 0.125rem solid rgb(160, 141, 108);
+    border-top: 0.125rem solid rgb(160, 141, 108);
+    opacity: 100;
+    transition: all 0.35s;
+}
+
+/* When the tab-switch is checked, the following styles are applied to the associated tab label */
+.tab-switch:checked + .tab-label {
+    background: #fff;
+    color: rgb(160, 141, 108);
+    border-bottom: 0;
+    border-top: 0.125rem solid rgb(160, 141, 108);
+    border-right: 0.125rem solid rgb(160, 141, 108);
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+}
+
+/* style .tab-content  that comes after the selected tab's label */
+.tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+}
+
+/* table of size offwhite */
+.wsize{
+    height: 270px;
+    width: 950px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+/* table of size ms */
+.mssize{
+    height: 280px;
+    width: 370px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* table of size gucci */
+.ggsize{
+    height: 310px;
+    width: 700px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* table of size prada */
+.pdsize{
+    height: 410px;
+    width: 1000px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 1000px;
+}
+
+/* table of size balen */
+.blsize{
+    height: 410px;
+    width: 1000px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 1000px;
+}
+
+/*footer*/
+footer{
+    margin-top:320px ;
+    margin-bottom: 0px;
+    background-color: rgb(163, 152, 138);
+    padding: 60px;
+    
+}
+.footerr{
+    margin-top: -20px;
+    text-align: center;
+    justify-content: center;
+}
+.footerr a{
+    font-family: Aboreto;
+    color: aliceblue;
+    font-size: 12px;
+    padding: 10px;
+    
+}
+
+.id{
+ font-weight:bolder;
+ color: black;
+}

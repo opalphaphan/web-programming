@@ -1,0 +1,90 @@
+header {
+  background: rgb(160,141,108);
+}
+
+.admin-wrapper {
+  display: flex;
+  height: calc(100% - 66px);
+}
+
+.homeie{
+  font-weight: 1000;
+  font-size: larger;
+}
+
+.admin-wrapper .left-sidebar {
+  flex: 2;
+  height: 100%;
+  background:rgb(160,141,108);
+}
+
+.admin-wrapper .left-sidebar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  color: aliceblue;
+}
+
+.admin-wrapper .left-sidebar ul li a {
+  padding: 18px;
+  display: block;
+  border-bottom: 1px solid #ffffff;
+}
+
+.admin-wrapper .left-sidebar ul li a:hover {
+  background: rgb(160,141,108);
+}
+
+.admin-wrapper .admin-content {
+  flex: 8;
+  height: 100%;
+  padding: 40px 100px 100px;
+  overflow-y: scroll;
+}
+.admin-content .page-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.edit {
+  color: rgb(97, 148, 89);
+}
+
+.delete {
+  color: rgb(97, 148, 89);
+}
+
+.publish {
+  color: rgb(97, 148, 89);
+}
+
+/* all style */
+.edit:hover,
+.delete:hover,
+.publish:hover {
+  text-decoration: underline;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+.edit {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: initial;
+}

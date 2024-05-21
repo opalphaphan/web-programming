@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aboreto&display=swap');
+/*------------------Nav------------------------*/
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: Aboreto;
+
+}
+
+header{
+    background-color: rgb(160, 141, 108);
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    font-family: Aboreto;
+    
+}
+ul {
+    flex: 1;
+    text-align: right;
+
+}
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 100 50px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+    
+  }
+
+.head a{
+     color: rgb(255, 255, 255);
+     padding: 0 10px;
+     position: relative;
+     font-size: 12px;
+     
+ }
+ 
+
+.box{
+    margin-left: 50;
+
+ }
+ .logo1{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+    margin-top: 4px;
+    margin-left: 25px;
+}
+.logo2{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+    margin-right: 5px;
+}
+.logo3{
+    width: 20px;
+    display: inline-block;
+    margin: top;
+}
+
+.mainlogo{
+    display:flex;
+    width: 140px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+nav{
+    font-family: Aboreto;
+    overflow: hidden;
+    position: fixed;
+    top:    0px;
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+    z-index: 1;
+}
+nav a{
+    display: flex;
+    color: rgb(30, 24, 24);
+    padding: 10px;
+    font-weight: 150px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 1px;
+    
+    
+}
+nav a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+    margin-top: 20px;
+    margin-right: 20px;
+
+
+}
+.x :hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 52px;
+    background-color: rgb(160, 141, 108);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.y :hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 65px;
+    background-color: rgb(160, 141, 108);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.z :hover::after{
+    background-color: aqua;
+    display:fixed;
+    width: 85px;
+    background-color: rgb(160, 141, 108);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.navbar{
+    justify-content: center;
+    display: flex;
+
+}
+/*------------------Catagory------------------------*/
+.caragory-container{ /*setting a container of this catagory part*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+.caragory-container select{ /*set the catagory box*/
+    width: 15%;
+    margin: 300px  auto;
+}
+select{ /*setting a content and color*/
+   background: rgb(160, 141, 108);
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   color: #fff;
+   border-radius: 5px;
+}
+/*------------------Search Box------------------------*/
+.container{ /*Setting size of the search bar and contect in the middle*/
+    width: 100%;
+    min-height: 100vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbar{ /*setting color and style of search box*/
+   width: 100%;
+   max-width: 700px;
+   background: rgb(160, 141, 108);
+   display: flex;
+   align-items: center;
+   border-radius: 60px;
+   padding: 10px;
+   margin-top: -1375px;
+}
+.searchbar input{ /*setting front and input in the search box*/
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color:white ;
+}
+::placeholder{
+    color: white;
+}
+.searchbar button img{ /*setting image size of search botton*/
+    width: 25px;
+}
+.searchbar button{ /*setting search botton*/
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: rgb(160, 141, 108);
+    cursor: pointer;
+}
+/*------------------Filter------------------------*/
+.links { /*setting container */
+    display: flex;
+    justify-content: center;
+    margin-top: -1000px;
+}
+.left-link { /*setting left link to be in tthe center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right-link{ /*setting right link to be in tthe center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+  
+.left-link a,
+.right-link a { /*display each catagory like a box*/
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+.left-link a:hover,
+.right-link a:hover { /*box hover */
+    background-color: rgb(160, 141, 108);
+    color: #fff;
+}
+.separator { /*the line to seperat between left and right */
+    height: 190px;
+    width: 2px;
+    background-color: rgb(160, 141, 108);
+    margin: 0 20px;
+}
+/*------------------Display Box------------------------*/
+.display{ /*setting the display content*/
+    display: flex;
+    position: relative;
+    margin: 60px;
+    padding: 10px;
+    justify-content: space-around;
+}
+.img{ /*setting image size*/
+    width:  250px;
+    height: 300px;
+    object-fit: cover;
+}
+.card { /*setting for display card and color*/
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 300px;
+    padding: 15px;
+    margin-left: 15px;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+  
+.card h1{ /*card headline*/
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.price{ /*setting front size and color*/
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: grey;
+    padding-left: 10px;
+  
+}
+  
+.card button{ /*botton click to detail of the shop*/
+    border: none;
+    outline: none;
+    padding: 12px;
+    background: rgb(160, 141, 108);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+  
+.card button:hover {/*botton hover*/
+    background: linear-gradient(to left,#0f0f0f,#353535);
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+

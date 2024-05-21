@@ -1,0 +1,1 @@
+/adminINFORMATION
